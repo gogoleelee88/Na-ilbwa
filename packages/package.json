@@ -1,0 +1,16 @@
+{
+  "name": "na-ilbwa",                // 메인 프로젝트의 이름
+  "version": "1.0.0",
+  "description": "리액트 및 넥스트 애플리케이션 프로젝트",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix apps/react-vite\" \"npm run dev --prefix apps/nextjs\"",
+    "build": "concurrently \"npm run build --prefix apps/react-vite\" \"npm run build --prefix apps/nextjs\"",
+    "start": "concurrently \"npm run start --prefix apps/react-vite\" \"npm run start --prefix apps/nextjs\""
+  },
+  "dependencies": {
+    "shared-components": "file:packages/shared-components"  // 공통 라이브러리 의존성
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"        // 여러 스크립트를 동시에 실행하기 위한 패키지
+  }
+}

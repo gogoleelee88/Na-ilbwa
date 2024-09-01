@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                   // 컴파일된 JavaScript의 버전
+      "module": "commonjs",              // 모듈 시스템
+      "declaration": true,               // 타입 정의 파일 생성 여부
+      "outDir": "dist",                  // 컴파일된 파일 출력 디렉토리
+      "baseUrl": ".",                    // 모듈 해석을 위한 기본 경로
+      "paths": {                         // 모듈 경로 별칭 설정
+        "*": ["src/*"]
+      },
+      "strict": true,                    // 엄격한 타입 검사 활성화
+      "jsx": "react"                     // JSX 문법 사용
+    },
+    "include": ["src/**/*"]              // 포함할 파일의 경로
+  }
+  
